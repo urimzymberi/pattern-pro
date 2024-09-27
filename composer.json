@@ -1,0 +1,25 @@
+{
+    "name": "urimz/pattern-pro",
+    "description": "PatternPro is the ultimate Laravel package designed for developers who prioritize precision, scalability, and maintainability. Built on the foundations of the module, repository, and service patterns, PatternPro helps you structure your application with clean, modular, and efficient code. Ideal for both new projects and existing codebases, this package ensures that your development process follows industry-leading best practices while remaining adaptable to complex business needs.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Urimz\\PatternPro\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "urimzymberi",
+            "email": "urimzymberii@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2",
+        "illuminate/console": "^10.0|^11.0",
+        "illuminate/filesystem": "^10.0|^11.0",
+        "illuminate/support": "^10.0|^11.0"
+    }
+}
