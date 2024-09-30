@@ -16,6 +16,28 @@ You can install PatternPro via Composer:
 composer require urimz/pattern-pro
 ```
 
+## Adding CommandServiceProvider to Laravel
+
+To use the `Urimz\PatternPro` package's commands, you need to register its service provider in your Laravel application. This can be done by adding the `CommandServiceProvider` to the provider list.
+
+### Step 1: Register the Service Provider
+
+In your `config/app.php` file, locate the `providers` array and add the following line:
+
+```php
+'providers' => [
+    // Other Service Providers...
+
+    Urimz\PatternPro\Providers\CommandServiceProvider::class,
+],
+```
+### Step 2: Publish the Provider (Optional)
+If the package includes configuration or other assets, you can publish them by running:
+
+```bash
+php artisan vendor:publish --provider="Urimz\PatternPro\Providers\CommandServiceProvider"
+```
+
 ## Publishing Configuration Files
 
 To customize the configuration for this package, you can publish the default configuration files to your project's `config/` directory.
